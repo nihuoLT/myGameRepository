@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.6"
+    android:background="@drawable/style_layout" >
+    
+    <TextView 
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:text="Account"
+        android:textColor="#ffff00"  
+        android:textSize="30sp"
+        />
+    <EditText  
+        android:id="@+id/accountEdittext"  
+        android:layout_width="130dp"
+        android:layout_height="wrap_content" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#ffff00"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/account"
+        android:text="scarecrows"
+        android:textSize="15sp" />
+    <TextView 
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Password"
+        android:textColor="#ffff00"  
+        android:textSize="30sp"
+        android:layout_below="@+id/accountEdittext"
+        android:layout_toLeftOf="@+id/accountEdittext"
+        android:layout_toStartOf="@+id/accountEdittext" />
+
+    <EditText
+        android:id="@+id/passwordEdittext"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ems="10"
+        android:text="password"
+        android:textColor="#ffff00"
+        android:textSize="15sp"
+        android:layout_below="@+id/accountEdittext"
+        android:layout_alignLeft="@+id/accountEdittext"
+        android:layout_alignStart="@+id/accountEdittext">
+    </EditText>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:background="@drawable/style_btn"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textColor="#ffff00"
+        />
+</RelativeLayout>
