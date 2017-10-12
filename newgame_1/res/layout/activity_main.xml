@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="true"
+    tools:context=".MainActivity" >
+    <com.example.newgame_1.GameView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton 
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zuo_b"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.7"
+        android:visibility="visible"
+        />
+    <ImageButton 
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/you_b"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.7"
+        android:visibility="visible"
+        />
+    <ImageButton 
+        android:id="@+id/jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiao_b"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.7"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible"
+        />
+</RelativeLayout>
